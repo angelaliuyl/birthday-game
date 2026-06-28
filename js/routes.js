@@ -23,7 +23,7 @@ const START_ROUTES = {
 
 const NEXT = {
     restaurant: "hexcolour",
-    hexcolour:  "restaurant",
+    hexcolour:  "library",
     library:    "monarchs",
     monarchs:   "church",
     church:     "ascii",
@@ -34,5 +34,5 @@ const NEXT = {
     tower:      "caesar",
     caesar:     "shanty",
     shanty:     "printer",
-    printer:    "caesar",
+    printer:    "restaurant",
 };
