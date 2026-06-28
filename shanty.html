@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location</title>
+    <title>Trivia</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Location</h1>
-
-    <p>On Whiteladies Road...</p>
+    <h1>Trivia</h1>
 
     <p class="clue">
-        Uniform Romeo Charlie
+        USHANT TO SCILLY
     </p>
 
+    <img
+        src="img/nautical.png"
+        alt="answer clue"
+        class="clue-image"
+    >
+
     <p>
-        THE REVEREND
         <input
             id="answer"
             type="text"
+            placeholder="2N"
             autocomplete="off"
-            placeholder="STRING"
-            style="--content-width: 10ch;"
         >
-        H SIMS
     </p>
 
     <button id="continueButton" disabled>
@@ -36,11 +37,11 @@
 
 </div>
 
-<script src="../js/routes.js"></script>
-<script src="../js/common.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/common.js"></script>
 
 <script>
-setupPuzzle("church", "basil");
+setupPuzzle("shanty", "35");
 </script>
 
 </body>

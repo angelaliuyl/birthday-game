@@ -2,20 +2,6 @@ function normalise(text) {
     return text.trim().toLowerCase();
 }
 
-function pathPrefix() {
-
-    if (pathPrefix._cache !== undefined) {
-        return pathPrefix._cache;
-    }
-
-    const script = document.querySelector('script[src*="common.js"]');
-    const ups = (script.getAttribute("src").match(/\.\.\//g) || []).length;
-
-    pathPrefix._cache = "../".repeat(ups);
-    return pathPrefix._cache;
-
-}
-
 function pageUrl(pageId) {
 
     const page = PAGES[pageId];
@@ -24,7 +10,7 @@ function pageUrl(pageId) {
         throw new Error(`Unknown page: ${pageId}`);
     }
 
-    return pathPrefix() + page.path;
+    return page.path;
 
 }
 

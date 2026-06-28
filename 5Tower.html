@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia</title>
+    <title>Location</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Trivia</h1>
-
-    <p class="clue">
-        OMEN ITEM EVENT
-    </p>
+    <h1>Location</h1>
 
     <img
-        src="../img/on the hill.png"
-        alt="answer clue"
+        src="img/tower.jpg"
+        alt="location clue"
         class="clue-image"
     >
+
+    <p class="clue">
+        SPOKES
+    </p>
 
     <input
         id="answer"
         type="text"
         autocomplete="off"
-        placeholder="8 char word"
+        placeholder="NN"
         style="--content-width: 10ch;"
-        maxlength="8"
+        maxlength="2"
     >
-
 
     <button id="continueButton" disabled>
         Continue
@@ -38,11 +37,11 @@
 
 </div>
 
-<script src="../js/routes.js"></script>
-<script src="../js/common.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/common.js"></script>
 
 <script>
-setupPuzzle("boardgame", "BETRAYAL");
+setupPuzzle("tower", "12");
 </script>
 
 </body>

@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Location</h1>
 
-    <p class="clue">
-        Black Boy Hill <br>
-        STOP B - BUS
-    </p>
+    <h1>Location</h1>
+    
+    <p>On Whiteladies Road...</p>
+
+    <img
+        src="img/library.png"
+        alt="location clue"
+        class="clue-image"
+    >
 
     <input
         id="answer"
         type="text"
+        placeholder="YYYY"
         autocomplete="off"
-        placeholder="3N"
-        style="--content-width: 4ch;"
-        maxlength="3"
+        style="--content-width: 5ch;"
+        maxlength="4"
     >
 
     <button id="continueButton" disabled>
@@ -32,11 +36,11 @@
 
 </div>
 
-<script src="../js/routes.js"></script>
-<script src="../js/common.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/common.js"></script>
 
 <script>
-setupPuzzle("bus", "505");
+setupPuzzle("library", "1885");
 </script>
 
 </body>

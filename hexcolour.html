@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encoding</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <h1>Encoding</h1>
 
-    <audio controls>
-        <source src="../aud/morse.wav" type="audio/wav">
-    Your browser does not support the audio element.
-    </audio>
-    <br>
+    <p class="clue">
+        (222, 202, 222)
+    </p>
+
+    <img
+        src="img/colour.png"
+        alt="answer clue"
+        class="clue-image"
+    >
 
     <input
         id="answer"
         type="text"
         autocomplete="off"
-        placeholder="3 words"
-        style="--content-width: 16ch;"
-        maxlength="15"
+        placeholder="6 char word"
+        style="--content-width: 15ch;"
+        maxlength="6"
     >
 
     <button id="continueButton" disabled>
@@ -33,11 +37,11 @@
 
 </div>
 
-<script src="../js/routes.js"></script>
-<script src="../js/common.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/common.js"></script>
 
 <script>
-setupPuzzle("morse", "omen item event");
+setupPuzzle("hexcolour", "decade");
 </script>
 
 </body>

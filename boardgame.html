@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia</title>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,23 +13,24 @@
     <h1>Trivia</h1>
 
     <p class="clue">
-        USHANT TO SCILLY
+        OMEN ITEM EVENT
     </p>
 
     <img
-        src="../img/nautical.png"
+        src="img/on the hill.png"
         alt="answer clue"
         class="clue-image"
     >
 
-    <p>
-        <input
-            id="answer"
-            type="text"
-            placeholder="2N"
-            autocomplete="off"
-        >
-    </p>
+    <input
+        id="answer"
+        type="text"
+        autocomplete="off"
+        placeholder="8 char word"
+        style="--content-width: 10ch;"
+        maxlength="8"
+    >
+
 
     <button id="continueButton" disabled>
         Continue
@@ -37,11 +38,11 @@
 
 </div>
 
-<script src="../js/routes.js"></script>
-<script src="../js/common.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/common.js"></script>
 
 <script>
-setupPuzzle("shanty", "35");
+setupPuzzle("boardgame", "BETRAYAL");
 </script>
 
 </body>
