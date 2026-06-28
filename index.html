@@ -1,1 +1,48 @@
-Test homepage
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Welcome</h1>
+
+    <p>
+        Solve your starting clue to identify your country.
+        Enter the country below to begin your route.
+    </p>
+
+    <input
+        id="country"
+        type="text"
+        placeholder="Country"
+        autocomplete="off"
+    >
+
+    <p id="message"></p>
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/routing.js"></script>
+
+<script>
+setupLandingPage({
+    france: "library",
+    italy: "church",
+    spain: "bus"
+});
+</script>
+
+</body>
+</html>
