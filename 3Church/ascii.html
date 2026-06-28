@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoding</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Encoding</h1>
+
+    <p class="clue">
+        <!-- TODO use basil as reference -->
+        66 76 65 67 75 32 66 79 89 32 72 73 76 76 <br>
+        B  _  _  _  _  _  _  _  _  _  _  _  _  _
+    </p>
+
+    <input
+        id="answer"
+        type="text"
+        autocomplete="off"
+        placeholder="14 char string"
+        style="--content-width: 15ch;"
+        maxlength="14"
+    >
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="../js/common.js"></script>
+
+<script>
+enableAnswer("black boy hill", "../4Bus/index.html");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Location</h1>
+
+    <p class="clue">
+        01179739222
+    </p>
+
+    <img
+        src="../img/locker.png"
+        alt="location clue"
+        class="clue-image"
+    >
+
+    <input
+        id="answer"
+        type="text"
+        autocomplete="off"
+        placeholder="number"
+        style="--content-width: 6ch;"
+        maxlength="3"
+    >
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="../js/common.js"></script>
+
+<script>
+enableAnswer("163", "caesar.html");
+</script>
+
+</body>
+</html>

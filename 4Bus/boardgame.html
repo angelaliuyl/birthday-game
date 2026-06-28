@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Trivia</h1>
+
+    <p class="clue">
+        OMEN ITEM EVENT
+    </p>
+
+    <img
+        src="../img/on the hill.png"
+        alt="answer clue"
+        class="clue-image"
+    >
+
+    <input
+        id="answer"
+        type="text"
+        autocomplete="off"
+        placeholder="8 char word"
+        style="--content-width: 10ch;"
+        maxlength="8"
+    >
+
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="../js/common.js"></script>
+
+<script>
+enableAnswer("BETRAYAL", "../BChurch/index.html");
+</script>
+
+</body>
+</html>

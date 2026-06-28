@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Trivia</h1>
+
+    <p class="clue">
+        GEORGE: X <br>
+        MARY: Y <br>
+        WILLIAM: Z <br>
+    </p>
+
+    <img
+        src="../img/monarchs.png"
+        alt="answer clue"
+        class="clue-image"
+    >
+
+    <input
+        id="answer"
+        type="text"
+        autocomplete="off"
+        placeholder="XYZ"
+        style="--content-width: 4ch;"
+        maxlength="3"
+    >
+
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="../js/common.js"></script>
+
+<script>
+enableAnswer("624", "puzzle1.html");
+</script>
+
+</body>
+</html>

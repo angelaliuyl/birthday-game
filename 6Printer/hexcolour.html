@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoding</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Encoding</h1>
+
+    <p class="clue">
+        (222, 202, 222)
+    </p>
+
+    <img
+        src="../img/colour.png"
+        alt="answer clue"
+        class="clue-image"
+    >
+
+    <input
+        id="answer"
+        type="text"
+        autocomplete="off"
+        placeholder="6 char word"
+        style="--content-width: 15ch;"
+        maxlength="6"
+    >
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="../js/common.js"></script>
+
+<script>
+enableAnswer("decade", "../ALibrary/index.html");
+</script>
+
+</body>
+</html>

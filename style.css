@@ -18,11 +18,11 @@ h1 {
 }
 
 input {
-    width: 100%;
     padding: 12px;
     font-size: 18px;
     margin: 20px 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    width: var(--content-width, 14ch);  /* Default 14 characters */
 }
 
 button {
@@ -39,4 +39,17 @@ button:disabled {
 #message {
     color: crimson;
     min-height: 20px;
+}
+
+.clue-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.hint {
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }

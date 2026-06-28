@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Location</h1>
+
+    <p>On Whiteladies Road...</p>
+
+    <p class="clue">
+        1 x ARROZ DE BOGAVANTE<br>
+        1 x POLLO ALA BRASA<br>
+        1 x PARILLADA DE MARISCO
+    </p>
+
+    <p>
+        Total : £
+        <input
+            id="answer"
+            type="text"
+            autocomplete="off"
+            placeholder="2N"
+            style="--content-width: 3ch;"
+            maxlength="2"
+        >
+    </p>
+
+    <button id="continueButton" disabled>
+        Continue
+    </button>
+
+</div>
+
+<script src="../js/common.js"></script>
+
+<script>
+enableAnswer("80", "hexcolour.html");
+</script>
+
+</body>
+</html>
