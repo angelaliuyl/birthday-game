@@ -28,19 +28,26 @@ function resolveNextPage(fromPageId) {
         throw new Error(`No next page for: ${fromPageId}`);
     }
 
-    const start = startPageId();
-
-    if (start && nextId === start) {
-        return "ending";
-    }
-
     return nextId;
 
 }
 
 function setupPuzzle(pageId, correctAnswers) {
 
-    enableAnswer(correctAnswers, pageUrl(resolveNextPage(pageId)));
+    const start = startPageId();
+    const visitKey = "visited:" + pageId;
+
+    if (start === pageId && sessionStorage.getItem(visitKey)) {
+        window.location.replace(pageUrl("ending") + window.location.search);
+        return;
+    }
+
+    enableAnswer(correctAnswers, () => {
+        if (start === pageId) {
+            sessionStorage.setItem(visitKey, "1");
+        }
+        return pageUrl(resolveNextPage(pageId)) + window.location.search;
+    });
 
 }
 
@@ -101,8 +108,13 @@ function enableAnswer(correctAnswers, nextPage) {
     });
 
     button.addEventListener("click", () => {
-        window.location.href = nextPage + window.location.search;
-    });
+
+        window.location.href =
+            typeof nextPage === "function"
+                ? nextPage()
+                : nextPage + window.location.search;
+
+    }, { once: true });
 
 }
 
