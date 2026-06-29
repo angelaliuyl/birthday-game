@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location</title>
+    <title>Cipher</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Location</h1>
+    <h1>Cipher</h1>
 
-    <p class="clue">
-        driven.milky.field <br>
-        SPOKES
-    </p>
-
-    <input
-        id="answer"
-        type="text"
-        autocomplete="off"
-        placeholder="NN"
-        style="--content-width: 10ch;"
-        maxlength="2"
+    <img
+        src="img/paintings.jpg"
+        alt="cipher clue"
+        class="clue-image"
     >
+
+    <p>
+        <input
+            id="answer"
+            type="text"
+            placeholder="string"
+            autocomplete="off"
+            style="--content-width: 14ch;"
+        >
+    </p>
 
     <button id="continueButton" disabled>
         Continue
@@ -36,7 +38,7 @@
 <script src="js/common.js"></script>
 
 <script>
-setupPuzzle("tower", "12");
+setupPuzzle("paintings", "simon");
 </script>
 
 </body>

@@ -12,6 +12,7 @@ const PAGES = {
     caesar:     { path: "caesar.html" },
     shanty:     { path: "shanty.html" },
     printer:    { path: "6Printer.html" },
+    paintings:  { path: "paintings.html" },
     ending:     { path: "ending.html" },
 };
 
@@ -22,17 +23,25 @@ const START_ROUTES = {
 };
 
 const NEXT = {
-    restaurant: "hexcolour",
-    hexcolour:  "library",
+    // restaurant
+    restaurant: "placeholder",
+    placeholder: "library",
+    // library
     library:    "monarchs",
     monarchs:   "church",
+    // church
     church:     "ascii",
     ascii:      "bus",
+    // bus
     bus:        "morse",
     morse:      "boardgame",
     boardgame:  "tower",
+    // tower
     tower:      "caesar",
     caesar:     "shanty",
     shanty:     "printer",
-    printer:    "restaurant",
+    //printer
+    printer:    "paintings",
+    paintings:  "hexcolour",
+    hexcolour:  "placeholder",  
 };
