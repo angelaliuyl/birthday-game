@@ -44,5 +44,5 @@ const NEXT = {
     //printer
     printer:    "paintings",
     paintings:  "hexcolour",
-    hexcolour:  "placeholder",  
+    hexcolour:  "restaurant",  
 };
