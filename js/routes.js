@@ -14,6 +14,7 @@ const PAGES = {
     printer:    { path: "6Printer.html" },
     paintings:  { path: "paintings.html" },
     ending:     { path: "ending.html" },
+    placeholder:{ path: "placeholder.html" },
 };
 
 const START_ROUTES = {
