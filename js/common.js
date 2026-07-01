@@ -35,20 +35,12 @@ function resolveNextPage(fromPageId) {
 function setupPuzzle(pageId, correctAnswers) {
 
     const start = startPageId();
-    const visitKey = "visited:" + pageId;
-
-    if (start === pageId && sessionStorage.getItem(visitKey)) {
-        window.location.replace(pageUrl("ending") + window.location.search);
-        return;
-    }
 
     enableAnswer(correctAnswers, () => {
-        if (start === pageId) {
-            sessionStorage.setItem(visitKey, "1");
-        }
-        return pageUrl(resolveNextPage(pageId)) + window.location.search;
+        const nextPageId = resolveNextPage(pageId);
+        const finalPageId = nextPageId === start ? "ending" : nextPageId;
+        return pageUrl(finalPageId) + window.location.search;
     });
-
 }
 
 function setupLandingPage() {
@@ -73,7 +65,7 @@ function setupLandingPage() {
 
             destination = null;
             button.disabled = true;
-            message.textContent = value.length > 0 ? "Unknown country." : "";
+            message.textContent = value.length > 0 ? "Incorrect Country." : "";
 
         }
 

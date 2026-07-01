@@ -21,6 +21,7 @@ const START_ROUTES = {
     taiwan:   "library",
     malaysia: "church",
     uk:       "restaurant",
+    "united kingdom": "restaurant",
 };
 
 const NEXT = {
