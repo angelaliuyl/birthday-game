@@ -47,7 +47,6 @@ function setupLandingPage() {
 
     const input = document.getElementById("country");
     const button = document.getElementById("continueButton");
-    const message = document.getElementById("message");
 
     let destination = null;
 
@@ -59,13 +58,11 @@ function setupLandingPage() {
 
             destination = START_ROUTES[value];
             button.disabled = false;
-            message.textContent = "";
 
         } else {
 
             destination = null;
             button.disabled = true;
-            message.textContent = value.length > 0 ? "Incorrect Country." : "";
 
         }
 
